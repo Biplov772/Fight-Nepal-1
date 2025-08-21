@@ -31,6 +31,8 @@ class CreateEventRequest(BaseModel):
     winner: str
 
 
+
+
 @app.post("/event")
 def create_event(event: CreateEventRequest):
     return event
